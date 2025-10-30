@@ -63,7 +63,6 @@
         structuredResult =
           pkgs.runCommand "structured-packages-output" {
             packagesDir = packagesInput;
-            buildInputs = [];
           } ''
             mkdir -p $out
             for pkgName in $(ls $packagesDir); do
@@ -74,11 +73,10 @@
       in {
         packages =
           allDerivations
-          // {
+          // rec {
             all = structuredResult;
+            default = all;
           };
-
-        defaultPackage = self.packages.${pkgs.system}.all;
       }
     );
     allDerivations = nixpkgs.lib.attrValues (nixpkgs.lib.filterAttrs (n: v: nixpkgs.lib.isDerivation v) (nixpkgs.lib.flatten localPackages));
@@ -116,11 +114,6 @@
     packages = forAllSystems (
       pkgs:
         localPackages.${pkgs.system}.packages
-    );
-
-    defaultPackage = forAllSystems (
-      pkgs:
-        localPackages.${pkgs.system}.defaultPackage
     );
   };
 }
