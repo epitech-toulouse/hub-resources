@@ -1,3 +1,5 @@
-#!/usr/bin/env sh
+#! /usr/bin/env nix-shell
+#! nix-shell -i bash jq -p bash
 
-nix eval .#packages.x86_64-linux --apply builtins.attrNames --json | jq flatten[] -r
+echo -e "Available target for \`nix build\`:\n"
+(nix eval .#packages.x86_64-linux --apply builtins.attrNames --json 2> /dev/null) | jq flatten[] -r
