@@ -75,10 +75,31 @@
         "type": "github"
       }
     },
+    "press": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1761437326,
+        "narHash": "sha256-W5ashqgrfdlEFKx81X8qVkhbefGJsxwiuip341fAPj0=",
+        "owner": "RossSmyth",
+        "repo": "press",
+        "rev": "c40590326e1f7800c4b751bb7fa18ffca2ab7e03",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RossSmyth",
+        "repo": "press",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "pre-commit-hooks": "pre-commit-hooks"
+        "pre-commit-hooks": "pre-commit-hooks",
+        "press": "press"
       }
     }
   },
