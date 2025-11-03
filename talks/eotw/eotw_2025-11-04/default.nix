@@ -1,4 +1,7 @@
-{pkgs}:
+{
+  pkgs,
+  jetbrains-mono,
+}:
 pkgs.buildTypstDocument rec {
   name = "eotw_2025-11-04";
   src = ./.;

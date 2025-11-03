@@ -107,6 +107,7 @@
         packages = with pkgs; [
           alejandra
           typst
+          jetbrains-mono
         ];
       };
     });
