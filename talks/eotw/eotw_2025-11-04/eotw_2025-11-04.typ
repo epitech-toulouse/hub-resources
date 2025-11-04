@@ -8,7 +8,7 @@
 #show: slides.with(
   title: "La gestion de projet Open Source",
   subtitle: "Emily of the Week",
-  date: "2025-10-04",
+  date: "2025-11-04",
   authors: "Emily Flion",
 
   ratio: 16 / 9, // Size of the slides
