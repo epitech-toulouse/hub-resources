@@ -110,15 +110,15 @@ C'est presque toujours forcément des EIP technique, cependant il est possible d
 == Pourquoi faire de l'Open Source
 
 #align(center + horizon)[
-*Visibilité*
+  *Visibilité*
 
-*Contributions*
+  *Contributions*
 
-*Communauté*
+  *Communauté*
 ]
 
 == Conclusion
 
 #align(center + horizon)[
-*Faites de l'Open Source, c'est cool l'Open Source ;)*
+  *Faites de l'Open Source, c'est cool l'Open Source ;)*
 ]
