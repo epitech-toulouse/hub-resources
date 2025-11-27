@@ -108,6 +108,7 @@
           alejandra
           typst
           jetbrains-mono
+          tinymist
         ];
       };
     });
